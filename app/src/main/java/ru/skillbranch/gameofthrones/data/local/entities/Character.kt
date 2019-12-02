@@ -1,6 +1,6 @@
 package ru.skillbranch.gameofthrones.data.local.entities
 
-data class Charter(
+data class Character(
     val id: String,
     val name: String,
     val gender: String,
@@ -15,7 +15,7 @@ data class Charter(
     val houseId: String//rel
 )
 
-data class CharterItem(
+data class CharacterItem(
     val id: String,
     val house: String, //rel
     val name: String,
@@ -23,7 +23,7 @@ data class CharterItem(
     val aliases: List<String>
 )
 
-data class CharterFull(
+data class CharacterFull(
     val id: String,
     val name: String,
     val words: String,
@@ -36,7 +36,7 @@ data class CharterFull(
     val mother: RelativeCharter?
 )
 
-data class RelativeCharter(
+data class RelativeCharacter(
     val id: String,
     val name: String,
     val house:String //rel
